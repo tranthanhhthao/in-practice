@@ -465,13 +465,13 @@ section {
     background-position: top left;
     background-repeat: no-repeat;
     background-image: linear-gradient(to top, var(--black-main) 100%, transparent 0);
-    background-size: 0 auto;
+    background-size: 0 100%;
     color: var(--gray-main);
     transition: background-size 1s;
 }
 
 .dark-button-action:hover {
-    background-size: 100% auto;
+    background-size: 100% 100%;
 }
 
 /* highlight-ing */
