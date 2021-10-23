@@ -252,6 +252,7 @@ p {
 
 #typewriter {
     position: relative;
+    display: inline-block;
     left: -3px;
     color: var(--black-second);
     font-size: 3.85rem;
@@ -262,7 +263,7 @@ p {
 #typewriter::after {
     content: "";
     position: absolute;
-    display: inline;
+    display: inline-block;
     background-color: var(--black-second);
     width: 2px;
     height: 3.8rem;
