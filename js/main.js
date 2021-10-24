@@ -129,7 +129,7 @@ const acts = ['in-practice', 'learning', 'learns to code', 'learns design']
 
 let activity = acts[counter];
 
-const element = document.querySelector('#typewriter');
+const element = document.querySelector('#typewriter p');
 
 const typewriter = {
     typingName: function typingName (delay) {

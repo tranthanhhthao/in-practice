@@ -260,7 +260,7 @@ p {
     width: 100%;
 }
 
-#typewriter::after {
+#typewriter p::after {
     content: "";
     position: absolute;
     display: inline-block;
