@@ -273,7 +273,8 @@ p {
     width: 2px;
     height: 3.8rem;
     white-space: pre;
-    margin-top: 5px;
+    margin-top: 0;
+    top: 11px;
     margin-right: -1px;
     animation: blinking 1.3s infinite;
 
