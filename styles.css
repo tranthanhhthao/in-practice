@@ -261,23 +261,38 @@ p {
 }
 
 #typewriter p {
+    top: 0;
     padding-top: 0;
     line-height: 1.05;
 }
 
 #typewriter p::after {
     content: "";
-    position: relative;
+    position: absolute;
+    display: inline-block;
+    background-color: var(--black-second);
+    width: 2px;
+    height: 3.8rem;
+    white-space: pre;
+    margin-top: 6px;
+    /* left: 0; */
+    /* top: 0; */
+    margin-left: -1px;
+    animation: blinking 1.3s infinite;
+
+}
+
+#blinking-cursor {
+    position: absolute;
     display: inline-block;
     background-color: var(--black-second);
     width: 2px;
     height: 3.8rem;
     white-space: pre;
     margin-top: 0;
-    top: 11px;
+    top: 12px;
     margin-right: -1px;
     animation: blinking 1.3s infinite;
-
 }
 
 @keyframes blinking {
