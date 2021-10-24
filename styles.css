@@ -267,7 +267,7 @@ p {
     background-color: var(--black-second);
     width: 2px;
     height: 3.8rem;
-
+    white-space: pre;
     margin-top: 5px;
 
     animation: blinking 1.3s infinite;
@@ -536,7 +536,7 @@ section {
 
     top: 260px;
     left: 160px;
-    transform: rotate(13deg);
+    transform: rotate(9deg);
 }
 
 .item2 .solow:nth-child(2) {
@@ -547,11 +547,15 @@ section {
     display: block;
 }
 
+.item2:hover p {
+    display: block;
+}
+
 .item2 p {
     position: absolute;
-    display: block;
+    display: none;
     font-size: 1rem;
-    transform: rotate(26deg);
+    /* transform: rotate(-13deg); */
     top: 130px;
     left: 285px;
 }

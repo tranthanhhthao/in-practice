@@ -1,3 +1,5 @@
+// 
+
 // hide navbar on scroll
 var prevScrollpos = window.pageYOffset;
 window.addEventListener('scroll', () => {
@@ -71,7 +73,8 @@ function coverForStart () {
     }, 4940)
 }
 
-coverForStart();
+// coverForStart();
+window.onload = coverForStart;
 
 // 02 clock
 
@@ -126,7 +129,7 @@ const acts = ['in-practice', 'learning', 'learns to code', 'learns design']
 
 let activity = acts[counter];
 
-const element = document.getElementById('typewriter');
+const element = document.querySelector('#typewriter');
 
 const typewriter = {
     typingName: function typingName (delay) {
