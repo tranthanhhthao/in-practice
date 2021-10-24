@@ -260,6 +260,11 @@ p {
     width: 100%;
 }
 
+#typewriter p {
+    padding-top: 0;
+    line-height: 1.05;
+}
+
 #typewriter p::after {
     content: "";
     position: absolute;
@@ -269,7 +274,7 @@ p {
     height: 3.8rem;
     white-space: pre;
     margin-top: 5px;
-
+    margin-right: -1px;
     animation: blinking 1.3s infinite;
 
 }
