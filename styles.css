@@ -75,8 +75,8 @@ p {
     padding-top: 10px;
 }
 
-svg:active {
-    background: none;
+svg {
+    -webkit-tap-highlight-color: transparent;
 }
 
 #menu-logo {
@@ -295,7 +295,7 @@ svg:active {
     display: inline-block;
     background-color: var(--black-second);
     width: 2px;
-    height: 3.31rem;
+    height: 3.33rem;
     white-space: pre;
     animation: blinking 1.3s infinite;
 }
