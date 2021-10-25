@@ -339,7 +339,7 @@ function darkenButton () {
 
 darkenButton();
 
-// item2 
+// item2 solow
 const solowContainer = document.querySelector('.item2');
 const solowCopies = document.getElementsByClassName('solow-copy');
 
@@ -351,6 +351,14 @@ function solow() {
         h = rect.height;
 
     var a = 240;
+
+    document.addEventListener('scroll', () => {
+        rect = solowContainer.getBoundingClientRect();
+        x = rect.left;
+        y = rect.top;
+        w = rect.width;
+        h = rect.height;
+    })
 
     var currentEvent, prevEvent;
     solowContainer.addEventListener('mousemove', e => {
@@ -376,15 +384,15 @@ function solow() {
     })
 
     solowContainer.addEventListener('mouseenter', () => {
-        solowCopies[0].style.top = '90px';
+        solowCopies[0].style.top = '100px';
         solowCopies[0].style.left = '190px';
         solowCopies[0].style.transform = 'rotateZ(8deg)';
 
-        solowCopies[1].style.top = '130px';
+        solowCopies[1].style.top = '140px';
         solowCopies[1].style.left = '160px';
         solowCopies[1].style.transform = 'rotateZ(0)';
 
-        solowCopies[2].style.top = '180px';
+        solowCopies[2].style.top = '190px';
         solowCopies[2].style.left = '130px';
         solowCopies[2].style.transform = 'rotateZ(-8deg)';
 
@@ -394,33 +402,33 @@ function solow() {
     })
 
     solowContainer.addEventListener('mousedown', (e) => {
-        currentEvent = e;
-        solowCopies[2].style.top = (currentEvent.clientY - y) - a/2 + "px";
-        solowCopies[2].style.left = (currentEvent.clientX - x) - a/2 + "px";
 
-        if (currentEvent.clientX < x + a/2 + 14 && currentEvent.clientY < y + a/2 + 14) { //corner top left
+        solowCopies[2].style.top = (e.clientY - y) - a/2 + "px";
+        solowCopies[2].style.left = (e.clientX - x) - a/2 + "px";
+
+        if (e.clientX < x + a/2 + 14 && e.clientY < y + a/2 + 14) { //corner top left
             solowCopies[2].style.left = '14px';
             solowCopies[2].style.top = '14px';
-        } else if (currentEvent.clientX > x + w - a/2 -14 && currentEvent.clientY < y + a/2 + 14) { //corner top right
+        } else if (e.clientX > x + w - a/2 -14 && e.clientY < y + a/2 + 14) { //corner top right
             solowCopies[2].style.left = w - a - 14 + 'px';
             solowCopies[2].style.top = '14px';
-        } else if (currentEvent.clientX < x + a/2 + 14 && currentEvent.clientY > y + h - a/2 - 14) { //corner bottom left
+        } else if (e.clientX < x + a/2 + 14 && e.clientY > y + h - a/2 - 14) { //corner bottom left
             solowCopies[2].style.left = '14px';
             solowCopies[2].style.top = h - a - 14 + 'px';
-        } else if (currentEvent.clientX > x + w - a/2 -14 && currentEvent.clientY > y + h - a/2 - 14) { //corner bottom right
+        } else if (e.clientX > x + w - a/2 -14 && e.clientY > y + h - a/2 - 14) { //corner bottom right
             solowCopies[2].style.left = w - a - 14 + 'px';
             solowCopies[2].style.top = h - a - 14 + 'px';
-        } else if (currentEvent.clientX < x + a/2) { //edge left
+        } else if (e.clientX < x + a/2 + 14) { //edge left
             solowCopies[2].style.left = '14px';
-            solowCopies[2].style.top = (currentEvent.clientY - y) - a/2 + "px";
-        } else if (currentEvent.clientX > x + w - a/2 - 14) { //edge right
+            solowCopies[2].style.top = (e.clientY - y) - a/2 + "px";
+        } else if (e.clientX > x + w - a/2 - 14) { //edge right
             solowCopies[2].style.left = w - a - 14 + 'px';
-            solowCopies[2].style.top = (currentEvent.clientY - y) - a/2 + "px";
-        } else if (currentEvent.clientY < y + a/2 + 14) { //edge top
-            solowCopies[2].style.left = (currentEvent.clientX - x) - a/2 + "px";
+            solowCopies[2].style.top = (e.clientY - y) - a/2 + "px";
+        } else if (e.clientY < y + a/2 + 14) { //edge top
+            solowCopies[2].style.left = (e.clientX - x) - a/2 + "px";
             solowCopies[2].style.top = '14px';
-        } else if (currentEvent.clientY > y + h - a/2 - 14) { //edge bottom
-            solowCopies[2].style.left = (currentEvent.clientX - x) - a/2 + "px";
+        } else if (e.clientY > y + h - a/2 - 14) { //edge bottom
+            solowCopies[2].style.left = (e.clientX - x) - a/2 + "px";
             solowCopies[2].style.top = h - a - 14 + 'px';
         } 
 

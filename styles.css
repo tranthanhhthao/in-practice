@@ -79,6 +79,14 @@ svg {
     -webkit-tap-highlight-color: transparent;
 }
 
+img { 
+    -webkit-user-drag: none; 
+    -khtml-user-drag: none; 
+    -moz-user-drag: none; 
+    -o-user-drag: none; 
+    user-drag: none; 
+  }
+
 .logo-container {
     z-index: 200;
     
@@ -655,25 +663,13 @@ section.contact-section {
     z-index: 25;
 }
 
-.item2:hover .solow-copy:nth-child(2) {
-    top: 140px;
-    left: 160px;
-    transform: rotate(0deg);
-}
-
-.item2:hover .solow-copy:nth-child(3) {
-    top: 190px;
-    left: 130px;
-    transform: rotate(-8deg);
-}
-
 .item2 p:nth-child(1) {
     position: absolute;
     display: block;
     font-size: 1rem;
     width: 90px;
     transform: rotate(0deg);
-    top: 227px;
+    top: 220px;
     left: 285px;
 }
 
@@ -712,7 +708,7 @@ section.contact-section {
     z-index: 10;
     position: absolute;
     display: block;
-    bottom: 29px;
+    bottom: 14px;
     left: 12px;
     width: 280px;
     height: auto;
