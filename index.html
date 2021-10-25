@@ -1,188 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <script src="js/anime.min.js"></script>
-        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <a id="menu-logo" href="#"><span>t</span></a>
-
-        <nav class="nav" id="navbar">
-            <div class="menu-link">
-                <a href="#">info</a>
-                <a href="#">contact</a>
-            </div>
-        </nav>
-
-        <nav class="subnav">
-            <div class="cover-for-start"></div>
-            <div class="back-to-top">
-                <svg class="tooltip" id="backtotop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.93 34.73">
-                    <!-- <title>backtotop</title> -->
-                    <path vector-effect="non-scaling-stroke" d="M21.16,57.36l18.27-32.5A141.4,141.4,0,0,1,58.32,53.68" transform="translate(-20.29 -23.12)" style="fill: none;stroke-miterlimit: 10;stroke-width: 2px"/>
-                </svg>
-                <p class="tooltiptext noselect">back to top</p>
-            </div>
-            <div class="zoom">
-                  <svg class="tooltip" id="zoom-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.07 30.66">
-                    <defs>
-                      <style>
-                        .line {
-                          fill: none;
-                          stroke: var(--black-main);
-                          stroke-miterlimit: 10;
-                          stroke-width: 2px;
-                        }
-                      </style>
-                    </defs>
-                    <!-- <title>zoom-out</title> -->
-                    <path class="line" vector-effect="non-scaling-stroke" d="M25.28,41.31l28.95-1.65" transform="translate(-25.22 -38.66)"/>
-                  </svg>
-                  <svg class="tooltip" id="zoom-in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.07 31.79">
-                    <defs>
-                      <style>
-                        .line {
-                          fill: none;
-                          stroke: var(--black-main);
-                          stroke-miterlimit: 10;
-                          stroke-width: 2px;
-                        }
-                      </style>
-                    </defs>
-                    <!-- <title>zoom-in</title> -->
-                    <g>
-                      <path class="line" vector-effect="non-scaling-stroke" d="M41.7,24.67q-1.26,15.81-1.59,31.69" transform="translate(-26.22 -24.59)"/>
-                      <path class="line" vector-effect="non-scaling-stroke" d="M26.29,41.12l26.93,2" transform="translate(-26.22 -24.59)"/>
-                    </g>
-                  </svg>
-                  <p class="tooltiptext noselect">zoom in and out</p>
-                  <p class="zoom-alert">page zoom-level is 100%.</p>
-            </div>
-
-        </nav>
-
-        <div class="zooming-target">
-        <header class="header">
-            <span id="clock">it's 04:31pm in hcmc,</span>
-            
-            <div id="typewriter"><span id="typed"></span><span id="blinking-cursor"></span></div>
-        </header>
-
-        <section class="info-section">
-            <div class="marquee">
-                <div class="cover-for-start"></div>
-
-                <ul>
-                    <li>info:</li>
-                    <li>this archive is where i talk too much 'bout my practice.</li>
-                    <li>thảo lảm nhảm trên web này nhiều.</li>
-                    <!-- clone -->
-                    <li>info:</li>
-                    <li>this archive is where i talk too much 'bout my practice.</li>
-                    <li>thảo lảm nhảm trên web này nhiều.</li>
-                    <!-- clone -->
-                    <li>info:</li>
-                    <li>this archive is where i talk too much 'bout my practice.</li>
-                    <li>thảo lảm nhảm trên web này nhiều.</li>
-                    <!-- clone -->
-                    <li>info:</li>
-                    <li>this archive is where i talk too much 'bout my practice.</li>
-                    <li>thảo lảm nhảm trên web này nhiều.</li>
-                </ul>
-            </div>
-
-            <div class="info-container">
-                 <div class="cover-for-start"></div>
-
-                <div class="grid-container">
-
-                    <div class="item1">
-                        <div class="button button-info dark-button-info noselect">thảo will go to rmit university</div>
-    
-                        <div class="button button-action dark-button-action notyet-dark noselect">send a message
-                            <svg id="next-arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.52 11.63">
-                                <defs>
-                                <style>
-                                    .next-arrow {
-                                    fill: none;
-                                    stroke-width: 1px;
-                                    stroke: var(--main-gray);
-                                    stroke-miterlimit: 10;
-                                    }
-                                </style>
-                                </defs>
-                                <title>next-arrow</title>
-                                <polyline id="next-arrow" class="next-arrow" vector-effect="non-scaling-stroke" points="0.35 0.35 5.82 5.82 0.35 11.28"/>
-                            </svg>
-                        </div>
-    
-                        <h3>i want to be like a web developer/ UI designer.</h3>
-                        <p>i will come back to rmit university hcmc vietnam to study after dropping out too many times. i’ll be serious. </p>
-                        <p>it’s like—i used to hate the Times New Roman typeface bad, here i type it only.</p>
-                        <p>i've been teaching myself to code and design. i've been figuring out my own styles. so far, i have uploaded some stuffs here. i hope i did a good job.</p>
-    
-                        <svg class="box" width="300px" height="610px">
-                            <polygon vector-effect="non-scaling-stroke" class="dashed-box" points="0,0 300,0 300,610 0,610" />
-                        </svg>
-                    </div>
-    
-                    <div class="item2">
-                        <img class="solow" id="solowPink" src="files/solowPink.svg">
-                        <img class="solow" id="solowBlue" src="files/solowBlue.svg">
-                        
-                        <svg class="box" width="610px" height="610px">
-                            <polygon class="dashed-box" points="0,0 610,0 610,610 0,610" />
-                        </svg>
-
-                        <p>2016</p>
-                    </div>
-    
-                    <div class="item3">3</div>
-                    <div class="item4">4</div>
-                    <div class="item5">5</div>
-    
-                    <div class="item6">6</div>
-                    <div class="item7">7</div>
-                    <div class="item8">8</div>
-                    <div class="item9">9</div>
-    
-                </div>
+        <div class="item">
+            <p>"<br>you know, i've been feeling so low lately.</p>
+            <p>2016</p>
+            <div class="solow-flow">
+                <img class="solow solow-copy" src="files/solowPink.png">
+                <img class="solow solow-copy" src="files/solowPink.png">
+                <img class="solow solow-copy" src="files/solowPink.png">
             </div>
             
-
-        </section>
-
-        <section class="contact-section">
-            <div class="marquee">
-                <ul>
-                    <li>contact:</li>
-                    <li>if you want to talk, just send me an email.</li>
-                    <li>i use <a class="link-highlight" data-highlight="facebook" href="https://www.facebook.com/tranthanhhthao/" target="_blank">facebook</a>.</li>
-                    <li>gửi cho thảo cái mail ha.</li>
-                    <!-- clone -->
-                    <li>contact:</li>
-                    <li>if you want to talk, just send me an email.</li>
-                    <li>i use <a class="link-highlight" data-highlight="facebook" href="https://www.facebook.com/tranthanhhthao/" target="_blank">facebook</a>.</li>
-                    <li>gửi cho thảo cái mail ha.</li>
-                    <!-- clone -->
-                    <li>contact:</li>
-                    <li>if you want to talk, just send me an email.</li>
-                    <li>i use <a class="link-highlight" data-highlight="facebook" href="https://www.facebook.com/tranthanhhthao/" target="_blank">facebook</a>.</li>
-                    <li>gửi cho thảo cái mail ha.</li>
-                    <!-- clone -->
-                    <li>contact:</li>
-                    <li>if you want to talk, just send me an email.</li>
-                    <li>i use <a class="link-highlight" data-highlight="facebook" href="https://www.facebook.com/tranthanhhthao/" target="_blank">facebook</a>.</li>
-                    <li>gửi cho thảo cái mail ha.</li>
-                    
-                </ul>
-            </div>
-
-        </section>
+            <svg class="box" width="610px" height="610px">
+                <polygon class="dashed-box" points="0,0 610,0 610,610 0,610" />
+            </svg>
+            
         </div>
-        
-        <script src="js/main.js"></script>
+
+        <script src="main.js"></script>
     </body>
 </html>
